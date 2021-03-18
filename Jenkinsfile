@@ -5,7 +5,7 @@ pipeline{
 		jdk 'jdk8'
 	}
 	stages{
-	
+		echo 'This is feature-branch'
 		stage('Code Checkout'){
 			steps{
 				git branch: 'master', url : 'https://github.com/ghimaja2207/spring-demo.git'
