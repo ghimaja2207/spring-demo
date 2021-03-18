@@ -22,6 +22,7 @@ pipeline{
 		stage('Test'){
 			steps{
 				echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+				echo "test stage"
 			}
 		}
 	}
