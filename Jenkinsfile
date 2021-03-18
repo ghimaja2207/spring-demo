@@ -9,7 +9,7 @@ pipeline{
 		stage('Code Checkout'){
 			steps{
 				echo 'This is feature-branch'
-				git branch: '${params.branch}', url : 'https://github.com/ghimaja2207/spring-demo.git'
+				git branch: '${params.branch}', credentialsId : 'd3285e6a-d788-4932-84b2-bcfd690e792e', url : 'https://github.com/ghimaja2207/spring-demo.git'
 				echo 'Code Checkout'
 			}
 		} 
