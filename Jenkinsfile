@@ -22,6 +22,7 @@ pipeline{
 		stage('Test'){
 			steps{
 				echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL} in ${params.branch}"
+				echo "test stage"
 			}
 		}
 	}
